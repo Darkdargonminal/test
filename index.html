@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Photo Gallery</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=1" alt="Random Image 1" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=2" alt="Random Image 2" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=3" alt="Random Image 3" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=4" alt="Random Image 4" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=5" alt="Random Image 5" onclick="openLightbox(this.src)">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=6" alt="Random Image 6" onclick="openLightbox(this.src)">
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </main>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox').style.display = 'flex';
+            document.getElementById('lightbox-img').src = src;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+    <footer>
+        <p>&copy; 2026 Simple Gallery</p>
+    </footer>
+</body>
+</html>
