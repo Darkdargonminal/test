@@ -9,10 +9,13 @@
 <body>
     <header>
         <h1>My Photo Gallery</h1>
-        <nav>
-            <a href="login.html" style="color: white; text-decoration: none; background: #555; padding: 5px 15px; border-radius: 5px;">Login</a>
+        <nav id="auth-status">
+            <!-- Auth status will be injected here -->
         </nav>
     </header>
+
+    <main>
+        <!-- ... existing gallery content ... -->
     <main>
         <div class="gallery">
             <div class="gallery-item">
@@ -52,8 +55,11 @@
             document.getElementById('lightbox').style.display = 'none';
         }
     </script>
-    <footer>
-        <p>&copy; 2026 Simple Gallery</p>
-    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="auth.js"></script>
 </body>
+
 </html>
