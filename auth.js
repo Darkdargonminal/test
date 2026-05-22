@@ -1,12 +1,13 @@
 // Your web app's Firebase configuration
 // REPLACE THE BELOW WITH YOUR ACTUAL FIREBASE CONFIG
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAI3_F-z3IiG1Odlv8nKk1jKQSxvONl-pg",
+  authDomain: "tests-a9a99.firebaseapp.com",
+  databaseURL: "https://tests-a9a99-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "tests-a9a99",
+  storageBucket: "tests-a9a99.firebasestorage.app",
+  messagingSenderId: "93269607598",
+  appId: "1:93269607598:web:1c1f871fb51d7c161f193f"
 };
 
 // Initialize Firebase
